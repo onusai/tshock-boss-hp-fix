@@ -1,3 +1,6 @@
 .
 .vs
 obj/
+bin/Debug/net6.0/BossHPFix.deps.json
+bin/Debug/net6.0/BossHPFix.pdb
+bin/Debug/net6.0/HttpServer.dll
