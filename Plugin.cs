@@ -72,9 +72,11 @@ namespace BossHPFix
 
                 foreach (TSPlayer p in players)
                 {
-                    if (nearestDistance == -1 || p.LastNetPosition.Distance(npc.position) < nearestDistance)
+                    float dist = p.LastNetPosition.Distance(npc.position);
+                    if (nearestDistance == -1 || dist < nearestDistance)
                     {
                         nearestPlayer = p;
+                        nearestDistance = dist;
                     }
                 }
 
